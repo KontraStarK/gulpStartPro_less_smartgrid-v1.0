@@ -1,0 +1,67 @@
+@import "_fonts";
+@import "_normalize";
+@import "_reset";
+@import "_colors";
+@import "smart-grid";
+
+header {
+  background-color: grey;
+  height: 100vh;
+
+  h1 {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .wrapper();
+}
+
+.block {
+  background-color: green;
+  padding: 20px 0;
+  .row-flex();
+
+
+  &-item {
+    margin: 10px 0;
+    .col();
+    .size(2);
+    .size-md(4);
+    .size-sm(6);
+    .size-xs(12);
+    .size-xxs(12);
+    height: 150px;
+    background-color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .block {
+    &-item {
+      background-color: blue;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block-item {
+    background-color: yellow;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .block-item {
+    background-color: lightcoral;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .block-item {
+    background-color: grey;
+  }
+}
